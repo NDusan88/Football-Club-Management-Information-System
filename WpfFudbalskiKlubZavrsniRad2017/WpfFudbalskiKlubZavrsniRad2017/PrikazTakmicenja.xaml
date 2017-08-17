@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfFudbalskiKlubZavrsniRad2017.PrikazTakmicenja"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfFudbalskiKlubZavrsniRad2017"
+        mc:Ignorable="d"
+        Title="Zavrsni rad 2017 Dusan NIkolic IT" Height="450" Width="530" Loaded="Window_Loaded" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <DataGrid x:Name="dataGridListaTakmicenja" IsReadOnly="True" CanUserAddRows="False" AlternatingRowBackground="Orange" AlternationCount="2" CanUserResizeColumns="False" CanUserDeleteRows="False" AutoGenerateColumns="False" ItemsSource="{Binding}" HorizontalAlignment="Left" Margin="101,10,0,0" VerticalAlignment="Top" Height="150" Width="326" SelectionChanged="dataGridListaTakmicenja_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Naziv" Width="80" Binding="{Binding Naziv}"/>
+                <DataGridTextColumn Header="Mesto" Width="80" Binding="{Binding Mesto}"/>
+                <DataGridTextColumn Header="Tip" Width="80" Binding="{Binding Tip}"/>
+                <DataGridTextColumn Header="Podloga" Width="80" Binding="{Binding Podloga}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,195,0,0" TextWrapping="Wrap" Text="Naziv" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="246,196,0,0" TextWrapping="Wrap" Text="Mesto" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="10,263,0,0" TextWrapping="Wrap" Text="Tip" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="246,257,0,0" TextWrapping="Wrap" Text="Podloga" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoNaziv" HorizontalAlignment="Left" Height="23" Margin="71,193,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxMesto" HorizontalAlignment="Left" Height="23" Margin="307,193,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxTip" HorizontalAlignment="Left" Height="23" Margin="71,262,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="comboBoxPodloga" HorizontalAlignment="Left" Margin="307,257,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Trava"/>
+            <ComboBoxItem Content="Vestacka trava"/>
+            <ComboBoxItem Content="Beton"/>
+            <ComboBoxItem Content="Sljaka"/>
+        </ComboBox>
+        <Button x:Name="buttonPromeni" Content="Promeni" HorizontalAlignment="Left" Margin="71,311,0,0" VerticalAlignment="Top" Width="75" Click="buttonPromeni_Click"/>
+        <Button x:Name="buttonObrisi" Content="Obrisi" HorizontalAlignment="Left" Margin="352,311,0,0" VerticalAlignment="Top" Width="75" Click="buttonObrisi_Click"/>
+        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="231,347,0,0" TextWrapping="Wrap" Text="Pronadji" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxPronadji" HorizontalAlignment="Left" Height="23" Margin="196,368,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="textBoxPronadji_TextChanged"/>
+        <Button x:Name="buttonIzadji" Content="Izadji" HorizontalAlignment="Left" Margin="352,353,0,0" VerticalAlignment="Top" Width="75" Click="buttonIzadji_Click"/>
+
+    </Grid>
+</Window>

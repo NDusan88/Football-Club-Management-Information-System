@@ -1,0 +1,304 @@
+﻿<Window x:Class="WpfFudbalskiKlubZavrsniRad2017.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfFudbalskiKlubZavrsniRad2017"
+        mc:Ignorable="d"
+        Title="Zavrsni rad 2017 Dusan NIkolic IT" Height="1080" Width="1920" Loaded="Window_Loaded" ShowInTaskbar="False" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+    <Viewbox StretchDirection="Both" Stretch="Uniform">
+        <Grid Height="800" Width="1500">
+            <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="790" VerticalAlignment="Top" Width="984">
+                <TabItem Header="Dodaj Clana">
+                    <Grid Background="LightGray">
+                        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="85,122,0,0" TextWrapping="Wrap" Text="JMBG" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="85,171,0,0" TextWrapping="Wrap" Text="Ime" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="85,221,0,0" TextWrapping="Wrap" Text="Ime roditelja" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="568,70,0,0" TextWrapping="Wrap" Text="Prezime" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="568,128,0,0" TextWrapping="Wrap" Text="Adresa" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Margin="568,187,0,0" TextWrapping="Wrap" Text="Telefon" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="textBlock7" HorizontalAlignment="Left" Margin="569,251,0,0" TextWrapping="Wrap" Text="Godiste" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="textBlock8" HorizontalAlignment="Left" Margin="568,317,0,0" TextWrapping="Wrap" Text="Pozicija" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="textBlock10" HorizontalAlignment="Left" Margin="85,416,0,0" TextWrapping="Wrap" Text="Broj uplatnice" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="textBlock11" HorizontalAlignment="Left" Margin="85,488,0,0" TextWrapping="Wrap" Text="Datum placanja" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="textBlock12" HorizontalAlignment="Left" Margin="569,475,0,0" TextWrapping="Wrap" Text="Iznos" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="textBlock13" HorizontalAlignment="Left" Margin="568,416,0,0" TextWrapping="Wrap" Text="Mesec" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="textBlock14" HorizontalAlignment="Left" Margin="569,542,0,0" TextWrapping="Wrap" Text="Godina" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="textBlock9" HorizontalAlignment="Left" Margin="432,10,0,0" TextWrapping="Wrap" Text="Clanarina" VerticalAlignment="Top"/>
+                        <TextBox x:Name="textBoxJMBG" HorizontalAlignment="Left" Height="23" Margin="201,124,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                        <TextBox x:Name="textBoxIme" HorizontalAlignment="Left" Height="23" Margin="201,172,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                        <TextBox x:Name="textBoxImeR" HorizontalAlignment="Left" Height="23" Margin="201,222,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                        <TextBox x:Name="textBoxPrezime" HorizontalAlignment="Left" Height="23" Margin="684,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                        <TextBox x:Name="textBoxAdresa" HorizontalAlignment="Left" Height="23" Margin="684,130,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                        <TextBox x:Name="textBoxTelefon" HorizontalAlignment="Left" Height="23" Margin="684,186,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                        <TextBox x:Name="textBoxGodiste" HorizontalAlignment="Left" Height="23" Margin="684,250,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                        <ComboBox x:Name="comboBoxPozicija" HorizontalAlignment="Left" Margin="684,317,0,0" VerticalAlignment="Top" Width="120">
+                            <ComboBoxItem>Igrac</ComboBoxItem>
+                            <ComboBoxItem>Trener</ComboBoxItem>
+                            <ComboBoxItem>Sudija</ComboBoxItem>
+                        </ComboBox>
+                        <TextBox x:Name="textBoxUplatnica" HorizontalAlignment="Left" Height="23" Margin="201,409,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                        <DatePicker Name="dtp1" HorizontalAlignment="Left" Margin="201,487,0,0" VerticalAlignment="Top"/>
+                        <ComboBox x:Name="comboBoxMesec" HorizontalAlignment="Left" Margin="684,416,0,0" VerticalAlignment="Top" Width="120">
+                            <ComboBoxItem Content="Januar"/>
+                            <ComboBoxItem Content="Februar"/>
+                            <ComboBoxItem Content="Mart"/>
+                            <ComboBoxItem Content="April"/>
+                            <ComboBoxItem Content="Maj"/>
+                            <ComboBoxItem Content="Jun"/>
+                            <ComboBoxItem Content="Juli"/>
+                            <ComboBoxItem Content="Avgust"/>
+                            <ComboBoxItem Content="Septembar"/>
+                            <ComboBoxItem Content="Oktobar"/>
+                            <ComboBoxItem Content="Novembar"/>
+                            <ComboBoxItem Content="Decembar"/>
+                        </ComboBox>
+                        <TextBox x:Name="textBoxIznos" HorizontalAlignment="Left" Height="23" Margin="684,474,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                        <TextBox x:Name="textBoxGodina" HorizontalAlignment="Left" Height="23" Margin="684,542,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" IsReadOnly="True" Background="Gray"/>
+                        <Button x:Name="buttonUclani" Content="Uclani" HorizontalAlignment="Left" Margin="201,550,0,0" VerticalAlignment="Top" Width="75" Click="buttonUclani_Click"/>
+                        <TextBox x:Name="textBoxBrckZadnji" HorizontalAlignment="Left" Height="23" Margin="201,64,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" IsReadOnly="True" Background="Gray"/>
+                        <TextBlock x:Name="textBlock34" HorizontalAlignment="Left" Margin="85,68,0,0" TextWrapping="Wrap" Text="Zadnji Dodat BrCK" VerticalAlignment="Top"/>
+                        <Button x:Name="buttonPrikazSvihClanova" Content="Prikaz clanova" HorizontalAlignment="Left" Margin="186,599,0,0" VerticalAlignment="Top" Width="107" Click="buttonPrikazSvihClanova_Click"/>
+                       
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Dodaj Igraca">
+                    <Grid Background="LightGray">
+                        <TextBlock x:Name="textBlock15" HorizontalAlignment="Left" Margin="88,38,0,0" TextWrapping="Wrap" Text="Lista Clanova" VerticalAlignment="Top"/>
+                        <DataGrid x:Name="dataGridClanoviIgraci" IsReadOnly="True" CanUserAddRows="False" AlternatingRowBackground="Orange" AlternationCount="2" CanUserResizeColumns="False" CanUserDeleteRows="False" AutoGenerateColumns="False" ItemsSource="{Binding}" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top" Height="582" Width="302">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="BrCk" Width="50" Binding="{Binding BrCK}"/>
+                                <DataGridTextColumn Header="Ime" Width="80" Binding="{Binding Ime}"/>
+                                <DataGridTextColumn Header="Prezime" Width="80" Binding="{Binding Prezime}"/>
+                                <DataGridTextColumn Header="Pozicija" Width="80" Binding="{Binding PosStatus}"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <TextBlock x:Name="textBlock16" HorizontalAlignment="Left" Margin="481,63,0,0" TextWrapping="Wrap" Text="Status" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="textBlock17" HorizontalAlignment="Left" Margin="481,137,0,0" TextWrapping="Wrap" Text="Pozicija" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="textBlock18" HorizontalAlignment="Left" Margin="481,224,0,0" TextWrapping="Wrap" Text="Broj dresa" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="textBlock19" HorizontalAlignment="Left" Margin="481,295,0,0" TextWrapping="Wrap" Text="Noga" VerticalAlignment="Top"/>
+                        <ComboBox x:Name="comboBoxStatus" HorizontalAlignment="Left" Margin="599,63,0,0" VerticalAlignment="Top" Width="120">
+                            <ComboBoxItem>Aktivan</ComboBoxItem>
+                            <ComboBoxItem>Povreda</ComboBoxItem>
+                        </ComboBox>
+                        <ComboBox x:Name="comboBoxPozicijaIgraca" HorizontalAlignment="Left" Margin="599,137,0,0" VerticalAlignment="Top" Width="120">
+                            <ComboBoxItem>Golman</ComboBoxItem>
+                            <ComboBoxItem>Odbrambeni igrac</ComboBoxItem>
+                            <ComboBoxItem>Vezni red</ComboBoxItem>
+                            <ComboBoxItem>Napadac</ComboBoxItem>
+                        </ComboBox>
+                        <TextBox x:Name="textBoxBrDresa" HorizontalAlignment="Left" Height="23" Margin="599,224,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                        <ComboBox x:Name="comboBoxNoga" HorizontalAlignment="Left" Margin="599,295,0,0" VerticalAlignment="Top" Width="120">
+                            <ComboBoxItem>Leva</ComboBoxItem>
+                            <ComboBoxItem>Desna</ComboBoxItem>
+                        </ComboBox>
+                        <Button x:Name="buttonDodajIgraca" Content="Dodaj igraca" HorizontalAlignment="Left" Margin="599,379,0,0" VerticalAlignment="Top" Width="75" Click="buttonDodajIgraca_Click"/>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Dodaj Trenera">
+                    <Grid Background="LightGray">
+                        <TextBlock x:Name="textBlock20" HorizontalAlignment="Left" Margin="213,38,0,0" TextWrapping="Wrap" Text="Lista Clanova" VerticalAlignment="Top"/>
+                        <DataGrid x:Name="dataGridClanoviTreneri" IsReadOnly="True" CanUserAddRows="False" AlternatingRowBackground="Orange" AlternationCount="2" CanUserResizeColumns="False" CanUserDeleteRows="False" AutoGenerateColumns="False" ItemsSource="{Binding}" HorizontalAlignment="Left" Margin="111,59,0,0" VerticalAlignment="Top" Height="555" Width="300">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="BrCk" Width="50" Binding="{Binding BrCK}"/>
+                                <DataGridTextColumn Header="Ime" Width="80" Binding="{Binding Ime}"/>
+                                <DataGridTextColumn Header="Prezime" Width="80" Binding="{Binding Prezime}"/>
+                                <DataGridTextColumn Header="Pozicija" Width="80" Binding="{Binding PosStatus}"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <TextBlock x:Name="textBlock21" HorizontalAlignment="Left" Margin="616,64,0,0" TextWrapping="Wrap" Text="Datum polaganja" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="textBlock22" HorizontalAlignment="Left" Margin="616,149,0,0" TextWrapping="Wrap" Text="Tip trenera" VerticalAlignment="Top"/>
+                        <DatePicker Name="dtp2" HorizontalAlignment="Left" Margin="737,60,0,0" VerticalAlignment="Top"/>
+                        <ComboBox x:Name="comboBoxTipTrenera" HorizontalAlignment="Left" Margin="737,149,0,0" VerticalAlignment="Top" Width="120">
+                            <ComboBoxItem>Glavni</ComboBoxItem>
+                            <ComboBoxItem>Kondicioni</ComboBoxItem>
+                            <ComboBoxItem>Golmana</ComboBoxItem>
+                        </ComboBox>
+                        <Button x:Name="buttonDodajTrenera" Content="Dodaj trenera" HorizontalAlignment="Left" Margin="737,228,0,0" VerticalAlignment="Top" Width="75" Click="buttonDodajTrenera_Click"/>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Dodaj Sudiju">
+                    <Grid Background="LightGray">
+                        <TextBlock x:Name="textBlock20_Copy" HorizontalAlignment="Left" Margin="213,38,0,0" TextWrapping="Wrap" Text="Lista Clanova" VerticalAlignment="Top"/>
+                        <DataGrid x:Name="dataGridClanoviSudija" IsReadOnly="True" CanUserAddRows="False" AlternatingRowBackground="Orange" AlternationCount="2" CanUserResizeColumns="False" CanUserDeleteRows="False" AutoGenerateColumns="False" ItemsSource="{Binding}" HorizontalAlignment="Left" Margin="111,59,0,0" VerticalAlignment="Top" Height="555" Width="300">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="BrCk" Width="50" Binding="{Binding BrCK}"/>
+                                <DataGridTextColumn Header="Ime" Width="80" Binding="{Binding Ime}"/>
+                                <DataGridTextColumn Header="Prezime" Width="80" Binding="{Binding Prezime}"/>
+                                <DataGridTextColumn Header="Pozicija" Width="80" Binding="{Binding PosStatus}"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <TextBlock x:Name="textBlock23" HorizontalAlignment="Left" Margin="586,63,0,0" TextWrapping="Wrap" Text="Datum polaganja" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="textBlock24" HorizontalAlignment="Left" Margin="586,122,0,0" TextWrapping="Wrap" Text="Rang" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="textBlock25" HorizontalAlignment="Left" Margin="586,180,0,0" TextWrapping="Wrap" Text="Tip" VerticalAlignment="Top"/>
+                        <DatePicker Name="dtp3" HorizontalAlignment="Left" Margin="713,60,0,0" VerticalAlignment="Top"/>
+                        <ComboBox x:Name="comboBoxSudijaRang" HorizontalAlignment="Left" Margin="713,115,0,0" VerticalAlignment="Top" Width="120">
+                            <ComboBoxItem>Nacionalni</ComboBoxItem>
+                            <ComboBoxItem>Internacionalni</ComboBoxItem>
+                            <ComboBoxItem>Regionalni</ComboBoxItem>
+                        </ComboBox>
+                        <ComboBox x:Name="comboBoxSudijaTip" HorizontalAlignment="Left" Margin="713,180,0,0" VerticalAlignment="Top" Width="120">
+                            <ComboBoxItem>Glavni</ComboBoxItem>
+                            <ComboBoxItem>Pomocni</ComboBoxItem>
+                        </ComboBox>
+                        <Button x:Name="buttonDodajSudiju" Content="Dodaj sudiju" HorizontalAlignment="Left" Margin="713,269,0,0" VerticalAlignment="Top" Width="75" Click="buttonDodajSudiju_Click"/>
+                    </Grid>
+                </TabItem>
+                <TabItem Name="IgraciTab" Header="Prikazi igrace">
+                    <Grid Background="LightGray">
+                        <TextBlock x:Name="textBlock26" HorizontalAlignment="Left" Margin="438,23,0,0" TextWrapping="Wrap" Text="Lista igraca" VerticalAlignment="Top"/>
+                        <DataGrid x:Name="dataGridListaIgraca" IsReadOnly="True" CanUserAddRows="False" AlternatingRowBackground="Orange" AlternationCount="2" CanUserResizeColumns="False" CanUserDeleteRows="False" AutoGenerateColumns="False" ItemsSource="{Binding}" HorizontalAlignment="Left" Margin="198,44,0,0" VerticalAlignment="Top" Height="371" Width="607">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="BrCk" Width="50" Binding="{Binding BrCK}"/>
+                                <DataGridTextColumn Header="Ime" Width="80" Binding="{Binding Ime}"/>
+                                <DataGridTextColumn Header="Prezime" Width="80" Binding="{Binding Prezime}"/>
+                                <DataGridTextColumn Header="Pozicija" Width="140" Binding="{Binding Pozicija}"/>
+                                <DataGridTextColumn Header="Broj dresa" Width="80" Binding="{Binding BrojDresa}"/>
+                                <DataGridTextColumn Header="Noga" Width="80" Binding="{Binding Noga}"/>
+                                <DataGridTextColumn Header="Status" Width="80" Binding="{Binding Status}"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <TextBlock x:Name="textBlock27" HorizontalAlignment="Left" Margin="216,441,0,0" TextWrapping="Wrap" Text="Promeni Status" VerticalAlignment="Top"/>
+                        <ComboBox x:Name="comboBoxPromeniStatusIgraca" HorizontalAlignment="Left" Margin="198,462,0,0" VerticalAlignment="Top" Width="120">
+                            <ComboBoxItem>Aktivan</ComboBoxItem>
+                            <ComboBoxItem>Povreda</ComboBoxItem>
+                        </ComboBox>
+                        <TextBlock x:Name="textBlock28" HorizontalAlignment="Left" Margin="682,441,0,0" TextWrapping="Wrap" Text="Promeni poziciju igraca" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="textBlock29" HorizontalAlignment="Left" Margin="438,441,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+                        <Button x:Name="buttonPromeniStatusIgraca" Content="Promeni status" HorizontalAlignment="Left" Margin="212,490,0,0" VerticalAlignment="Top" Width="97" Click="buttonPromeniStatusIgraca_Click"/>
+                        <Button x:Name="buttonPromeniPoziciju" Content="Promeni poziciju" HorizontalAlignment="Left" Margin="702,466,0,0" VerticalAlignment="Top" Width="103" Click="buttonPromeniPoziciju_Click"/>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Prikazi Trenere">
+                    <Grid Background="LightGray">
+                        <DataGrid x:Name="dataGridListaTrenera" IsReadOnly="True" CanUserAddRows="False" AlternatingRowBackground="Orange" AlternationCount="2" CanUserResizeColumns="False" CanUserDeleteRows="False" AutoGenerateColumns="False" ItemsSource="{Binding}" HorizontalAlignment="Left" Margin="42,43,0,0" VerticalAlignment="Top" Height="371" Width="300">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="BrCk" Width="50" Binding="{Binding BrCK}"/>
+                                <DataGridTextColumn Header="Ime" Width="80" Binding="{Binding Ime}"/>
+                                <DataGridTextColumn Header="Prezime" Width="80" Binding="{Binding Prezime}"/>
+                                <DataGridTextColumn Header="Tip" Width="80" Binding="{Binding Tip}"/>
+
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <TextBlock x:Name="textBlock30" HorizontalAlignment="Left" Margin="435,43,0,0" TextWrapping="Wrap" Text="Promeni tip" VerticalAlignment="Top"/>
+                        <ComboBox x:Name="comboBoxPromeniTipTrenera" HorizontalAlignment="Left" Margin="405,64,0,0" VerticalAlignment="Top" Width="120">
+                            <ComboBoxItem>Glavni</ComboBoxItem>
+                            <ComboBoxItem>Kondicioni</ComboBoxItem>
+                            <ComboBoxItem>Golmana</ComboBoxItem>
+                        </ComboBox>
+                        <Button x:Name="buttonPromeniTIpTrenera" Content="Promeni tip" HorizontalAlignment="Left" Margin="429,100,0,0" VerticalAlignment="Top" Width="75" Click="buttonPromeniTIpTrenera_Click"/>
+                    </Grid>
+                </TabItem>
+                <TabItem Name="SudijeTab" Header="Prikazi Sudije">
+                    <Grid Background="LightGray">
+                        <DataGrid x:Name="dataGridListaSudija" IsReadOnly="True" CanUserAddRows="False" AlternatingRowBackground="Orange" AlternationCount="2" CanUserResizeColumns="False" CanUserDeleteRows="False" AutoGenerateColumns="False" ItemsSource="{Binding}" HorizontalAlignment="Left" Margin="42,43,0,0" VerticalAlignment="Top" Height="371" Width="503">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="BrCk" Width="50" Binding="{Binding BrCK}"/>
+                                <DataGridTextColumn Header="Ime" Width="80" Binding="{Binding Ime}"/>
+                                <DataGridTextColumn Header="Prezime" Width="80" Binding="{Binding Prezime}"/>
+                                <DataGridTextColumn Header="Rang" Width="100" Binding="{Binding Rang}"/>
+                                <DataGridTextColumn Header="Tip" Width="80" Binding="{Binding Tip}"/>
+                                <DataGridTextColumn Header="DatumPolaganja" Width="100" Binding="{Binding DatumPolaganja, StringFormat={}{0:dd/MM/yyyy}}"/>
+
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <TextBlock x:Name="textBlock31" HorizontalAlignment="Left" Margin="242,22,0,0" TextWrapping="Wrap" Text="Lista Sudija" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="textBlock32" HorizontalAlignment="Left" Margin="616,22,0,0" TextWrapping="Wrap" Text="Promeni tip" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="textBlock33" HorizontalAlignment="Left" Margin="789,22,0,0" TextWrapping="Wrap" Text="Promeni Rang" VerticalAlignment="Top"/>
+                        <ComboBox x:Name="comboBoxSudijaRangLista" HorizontalAlignment="Left" Margin="770,43,0,0" VerticalAlignment="Top" Width="120">
+                            <ComboBoxItem Content="Nacionalni"/>
+                            <ComboBoxItem Content="Internacionalni"/>
+                            <ComboBoxItem Content="Regionalni"/>
+                        </ComboBox>
+                        <ComboBox x:Name="comboBoxSudijaTipLista" HorizontalAlignment="Left" Margin="586,43,0,0" VerticalAlignment="Top" Width="120">
+                            <ComboBoxItem Content="Glavni"/>
+                            <ComboBoxItem Content="Pomocni"/>
+                        </ComboBox>
+                        <Button x:Name="buttonPromeniTipSudije" Content="Promeni tip" HorizontalAlignment="Left" Margin="610,70,0,0" VerticalAlignment="Top" Width="75" Click="buttonPromeniTipSudije_Click"/>
+                        <Button x:Name="buttonPromeniRangSudije" Content="Promeni rang" HorizontalAlignment="Left" Margin="794,70,0,0" VerticalAlignment="Top" Width="75" Click="buttonPromeniRangSudije_Click"/>
+                    </Grid>
+                </TabItem>
+            </TabControl>
+            <TabControl x:Name="tabControl1" HorizontalAlignment="Left" Height="380" Margin="984,0,0,0" VerticalAlignment="Top" Width="516">
+                <TabItem Header="Dodaj Takmicenja">
+                    <Grid Background="LightBlue">
+                        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="22,39,0,0" TextWrapping="Wrap" Text="Naziv" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="textBlock35" HorizontalAlignment="Left" Margin="254,39,0,0" TextWrapping="Wrap" Text="Mesto" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="textBlock36" HorizontalAlignment="Left" Margin="22,103,0,0" TextWrapping="Wrap" Text="Tip" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="textBlock37" HorizontalAlignment="Left" Margin="254,104,0,0" TextWrapping="Wrap" Text="Podloga" VerticalAlignment="Top"/>
+                        <TextBox x:Name="textBoxNazivTakmicenja" HorizontalAlignment="Left" Height="23" Margin="98,38,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                        <TextBox x:Name="textBoxMestoTakmicenja" HorizontalAlignment="Left" Height="23" Margin="329,39,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                        <ComboBox x:Name="comboBoxTip" HorizontalAlignment="Left" Margin="98,97,0,0" VerticalAlignment="Top" Width="120">
+                            <ComboBoxItem>Nacionalno</ComboBoxItem>
+                            <ComboBoxItem>Internacionalno</ComboBoxItem>
+                            <ComboBoxItem>Lokalno</ComboBoxItem>
+                            <ComboBoxItem>Pokrajinsko</ComboBoxItem>
+                        </ComboBox>
+                        <ComboBox x:Name="comboBoxPodloga" HorizontalAlignment="Left" Margin="329,98,0,0" VerticalAlignment="Top" Width="120">
+                            <ComboBoxItem>Trava</ComboBoxItem>
+                            <ComboBoxItem>Vestacka trava</ComboBoxItem>
+                            <ComboBoxItem>Beton</ComboBoxItem>
+                            <ComboBoxItem>Sljaka</ComboBoxItem>
+                        </ComboBox>
+                        <Button x:Name="buttonDodajTakmicenja" Content="Dodaj" HorizontalAlignment="Left" Margin="98,144,0,0" VerticalAlignment="Top" Width="75" Click="buttonDodajTakmicenja_Click"/>
+                        <DataGrid x:Name="dataGridListaTakmicenja" IsReadOnly="True" CanUserAddRows="False" AlternatingRowBackground="Orange" AlternationCount="2" CanUserResizeColumns="False" CanUserDeleteRows="False" AutoGenerateColumns="False" ItemsSource="{Binding}" HorizontalAlignment="Left" Margin="32,191,0,0" VerticalAlignment="Top" Height="150" Width="446">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Naziv" Width="150" Binding="{Binding Naziv}"/>
+                                <DataGridTextColumn Header="Mesto" Width="80" Binding="{Binding Mesto}"/>
+                                <DataGridTextColumn Header="Tip" Width="80" Binding="{Binding Tip}"/>
+                                <DataGridTextColumn Header="Podloga" Width="120" Binding="{Binding Podloga}"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Button x:Name="buttonPromeniTakmicenja" Content="Promeni" HorizontalAlignment="Left" Margin="329,144,0,0" VerticalAlignment="Top" Width="75" Click="buttonPromeniTakmicenja_Click"/>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Ucestvovanje" MouseLeftButtonUp="TabItem_MouseLeftButtonUp">
+                    <Grid Background="LightBlue" Margin="0,4,-0.4,-3.8">
+                        <DataGrid x:Name="dataGridListaTakmicenjaIgraca" IsReadOnly="True" CanUserAddRows="False" AlternatingRowBackground="Orange" AlternationCount="2" CanUserResizeColumns="False" CanUserDeleteRows="False" AutoGenerateColumns="False" ItemsSource="{Binding}" HorizontalAlignment="Left" Margin="41,10,0,0" VerticalAlignment="Top" Height="150" Width="442" SelectionChanged="dataGridListaTakmicenjaIgraca_SelectionChanged">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Naziv" Width="150" Binding="{Binding Naziv}"/>
+                                <DataGridTextColumn Header="Mesto" Width="80" Binding="{Binding Mesto}"/>
+                                <DataGridTextColumn Header="Tip" Width="80" Binding="{Binding Tip}"/>
+                                <DataGridTextColumn Header="Podloga" Width="120" Binding="{Binding Podloga}"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Button x:Name="buttonPrikaziUcesnike" Content="Prikazi ucesnike" HorizontalAlignment="Left" Margin="90,188,0,0" VerticalAlignment="Top" Width="110" Click="buttonPrikaziUcesnike_Click"/>
+                        <Button x:Name="buttonOdrediIgrace" Content="Odredi igrace za takmicenje" HorizontalAlignment="Left" Margin="257,188,0,0" VerticalAlignment="Top" Width="159" IsEnabled="False" Click="buttonOdrediIgrace_Click"/>
+                        <DatePicker Name="dtp4" HorizontalAlignment="Left" Margin="257,230,0,0" VerticalAlignment="Top"/>
+                    </Grid>
+                </TabItem>
+                <TabItem MouseLeftButtonUp="TabItem_MouseLeftButtonUp_1" Header="Titula igraca">
+                    <Grid Background="LightBlue">
+                        <DataGrid x:Name="dataGridDodajTitulu" IsReadOnly="True" CanUserAddRows="False" AlternatingRowBackground="Orange" AlternationCount="2" CanUserResizeColumns="False" CanUserDeleteRows="False" AutoGenerateColumns="False" ItemsSource="{Binding}" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="230" Width="296">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="BrCk" Width="50" Binding="{Binding BrCK}"/>
+                                <DataGridTextColumn Header="Ime" Width="80" Binding="{Binding Ime}"/>
+                                <DataGridTextColumn Header="Prezime" Width="80" Binding="{Binding Prezime}"/>
+                                <DataGridTextColumn Header="Pozicija" Width="80" Binding="{Binding Pozicija}"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <TextBlock x:Name="textBlock38" HorizontalAlignment="Left" Margin="390,82,0,0" TextWrapping="Wrap" Text="Titule" VerticalAlignment="Top"/>
+                        <ComboBox x:Name="comboBoxTitule" HorizontalAlignment="Left" Margin="348,103,0,0" VerticalAlignment="Top" Width="120">
+                            <ComboBoxItem>Najbolji golman lige</ComboBoxItem>
+                            <ComboBoxItem>Najbolji golman kupa</ComboBoxItem>
+                            <ComboBoxItem>Najbolji igrac lige</ComboBoxItem>
+                            <ComboBoxItem>Najbolji igrac kupa</ComboBoxItem>
+                            <ComboBoxItem>Najbolji strelac lige</ComboBoxItem>
+                            <ComboBoxItem>Najbolji strelac kupa</ComboBoxItem>
+                        </ComboBox>
+                        <Button x:Name="buttonDodeli" Content="Dodeli titulu" HorizontalAlignment="Left" Margin="372,143,0,0" VerticalAlignment="Top" Width="75" Click="buttonDodeli_Click"/>
+                        <Button x:Name="buttonPrikazIgraca" Content="Prikaz igraca sa titulom" HorizontalAlignment="Left" Margin="10,265,0,0" VerticalAlignment="Top" Width="145" Click="buttonPrikazIgraca_Click"/>
+                        <ComboBox x:Name="comboBoxListaTakmicenja" HorizontalAlignment="Left" Margin="348,34,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="comboBoxListaTakmicenja_SelectionChanged"/>
+                        <TextBlock x:Name="textBlock39" HorizontalAlignment="Left" Margin="368,10,0,0" TextWrapping="Wrap" Text="Lista takmicenja" VerticalAlignment="Top"/>
+                    </Grid>
+                </TabItem>
+            </TabControl>
+            <Button x:Name="buttonDobavljaci" Content="Dobavljaci" HorizontalAlignment="Left" Margin="989,415,0,0" VerticalAlignment="Top" Width="174" Height="57" Click="buttonDobavljaci_Click"/>
+            <Button x:Name="buttonDodajNabavka" Content="Dodaj opremu za nabavku" HorizontalAlignment="Left" Margin="1316,415,0,0" VerticalAlignment="Top" Width="174" Height="57" Click="buttonDodajNabavka_Click"/>
+            <Button x:Name="buttonNaruciOpremu" Content="Naruci opremu" HorizontalAlignment="Left" Margin="989,558,0,0" VerticalAlignment="Top" Width="174" Height="57" Click="buttonNaruciOpremu_Click"/>
+            <Button x:Name="buttonZaduziOpremu" Content="Zaduzi opremu" HorizontalAlignment="Left" Margin="1316,558,0,0" VerticalAlignment="Top" Width="174" Height="57" Click="buttonZaduziOpremu_Click"/>
+
+        </Grid>
+    </Viewbox>
+
+</Window>

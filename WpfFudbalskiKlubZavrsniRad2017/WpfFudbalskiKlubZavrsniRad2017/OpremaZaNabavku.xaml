@@ -1,0 +1,49 @@
+﻿<Window x:Class="WpfFudbalskiKlubZavrsniRad2017.OpremaZaNabavku"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfFudbalskiKlubZavrsniRad2017"
+        mc:Ignorable="d"
+        Title="OpremaZaNabavku" Height="300" Width="600" Loaded="Window_Loaded" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,35,0,0" TextWrapping="Wrap" Text="Tip" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="10,91,0,0" TextWrapping="Wrap" Text="Proizvodjac" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="10,144,0,0" TextWrapping="Wrap" Text="Broj" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="10,202,0,0" TextWrapping="Wrap" Text="Boja" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxTip" HorizontalAlignment="Left" Height="23" Margin="92,35,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="comboBoxProizvodjac" HorizontalAlignment="Left" Margin="92,91,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem>Nike</ComboBoxItem>
+            <ComboBoxItem>Adidas</ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="comboBoxBroj" HorizontalAlignment="Left" Margin="92,144,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem>38</ComboBoxItem>
+            <ComboBoxItem>39</ComboBoxItem>
+            <ComboBoxItem>40</ComboBoxItem>
+            <ComboBoxItem>41</ComboBoxItem>
+            <ComboBoxItem>42</ComboBoxItem>
+            <ComboBoxItem>43</ComboBoxItem>
+            <ComboBoxItem>44</ComboBoxItem>
+            <ComboBoxItem>45</ComboBoxItem>
+            <ComboBoxItem>46</ComboBoxItem>
+
+        </ComboBox>
+        <ComboBox x:Name="comboBoxBoja" HorizontalAlignment="Left" Margin="92,202,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem>Plava</ComboBoxItem>
+            <ComboBoxItem>Crna</ComboBoxItem>
+            <ComboBoxItem>Crvena</ComboBoxItem>
+            <ComboBoxItem>Zuta</ComboBoxItem>
+            <ComboBoxItem>Zelena</ComboBoxItem>
+        </ComboBox>
+        <DataGrid x:Name="dataGridListaOprema" IsReadOnly="True" CanUserAddRows="False" AlternatingRowBackground="Orange" AlternationCount="2" CanUserResizeColumns="False" CanUserDeleteRows="False" AutoGenerateColumns="False" ItemsSource="{Binding}" HorizontalAlignment="Left" Margin="242,30,0,0" VerticalAlignment="Top" Height="188" Width="326">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Tip" Width="80" Binding="{Binding Tip}"/>
+                <DataGridTextColumn Header="Proizvodjac" Width="80" Binding="{Binding Proizvodjac}"/>
+                <DataGridTextColumn Header="Broj" Width="80" Binding="{Binding Broj}"/>
+                <DataGridTextColumn Header="Boja" Width="80" Binding="{Binding Boja}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="buttonDodaj" Content="Dodaj" HorizontalAlignment="Left" Margin="242,233,0,0" VerticalAlignment="Top" Width="75" Click="buttonDodaj_Click"/>
+        <Button x:Name="buttonNazad" Content="Nazad" HorizontalAlignment="Left" Margin="493,233,0,0" VerticalAlignment="Top" Width="75" Click="buttonNazad_Click"/>
+    </Grid>
+</Window>
